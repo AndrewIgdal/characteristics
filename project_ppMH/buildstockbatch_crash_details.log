@@ -1,0 +1,365 @@
+
+####################
+Traceback (most recent call last):
+  File "/buildstockbatch/buildstockbatch/utils.py", line 98, in run_with_error_capture
+    return func(*args, **kwargs)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 378, in main
+    LocalDockerBatch.validate_project(args.project_filename)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 145, in validate_project
+    super(LocalDockerBatch, LocalDockerBatch).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 58, in validate_project
+    super(DockerBatchBase, DockerBatchBase).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 254, in validate_project
+    assert BuildStockBatchBase.validate_project_schema(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 302, in validate_project_schema
+    raise FileNotFoundError(version_schema)
+FileNotFoundError: /buildstockbatch/buildstockbatch/schemas/vNone.yaml
+
+In file: /buildstockbatch/buildstockbatch/utils.py, module run_with_error_capture line: 98 
+Local Variables: 'args':()
+'kwargs':{}
+'f':<_io.TextIOWrapper name='buildstockbatch_crash_details.log' mode='a' encoding='UTF-8'>
+'text':'
+####################
+'
+'func':<function main at 0x7f325bea9280>
+'output_file':'buildstockbatch_crash_details.log'
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module main line: 378 
+Local Variables: 'parser':ArgumentParser(prog='buildstock_docker', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+'group':<argparse._MutuallyExclusiveGroup object at 0x7f325beaa3a0>
+'args':Namespace(project_filename='_baseline.yml', j=None, measures_only=False, postprocessonly=False, uploadonly=False, validateonly=False, samplingonly=False)
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 145 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.LocalDockerBatch'>
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 58 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.DockerBatchBase'>
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project line: 254 
+Local Variables: 'project_file':'_baseline.yml'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project_schema line: 302 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'lschema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch/resstock','project_directory': 'project_national','output_directory': 'national_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'schema_version':None
+'version_schema':'/buildstockbatch/buildstockbatch/schemas/vNone.yaml'
+
+####################
+Traceback (most recent call last):
+  File "/buildstockbatch/buildstockbatch/utils.py", line 98, in run_with_error_capture
+    return func(*args, **kwargs)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 378, in main
+    LocalDockerBatch.validate_project(args.project_filename)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 145, in validate_project
+    super(LocalDockerBatch, LocalDockerBatch).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 58, in validate_project
+    super(DockerBatchBase, DockerBatchBase).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 254, in validate_project
+    assert BuildStockBatchBase.validate_project_schema(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 302, in validate_project_schema
+    raise FileNotFoundError(version_schema)
+FileNotFoundError: /buildstockbatch/buildstockbatch/schemas/vNone.yaml
+
+In file: /buildstockbatch/buildstockbatch/utils.py, module run_with_error_capture line: 98 
+Local Variables: 'args':()
+'kwargs':{}
+'f':<_io.TextIOWrapper name='buildstockbatch_crash_details.log' mode='a' encoding='UTF-8'>
+'text':'
+####################
+'
+'func':<function main at 0x7f4d0f906280>
+'output_file':'buildstockbatch_crash_details.log'
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module main line: 378 
+Local Variables: 'parser':ArgumentParser(prog='buildstock_docker', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+'group':<argparse._MutuallyExclusiveGroup object at 0x7f4d0f907310>
+'args':Namespace(project_filename='_baseline.yml', j=None, measures_only=False, postprocessonly=False, uploadonly=False, validateonly=True, samplingonly=False)
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 145 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.LocalDockerBatch'>
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 58 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.DockerBatchBase'>
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project line: 254 
+Local Variables: 'project_file':'_baseline.yml'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project_schema line: 302 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'lschema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch/resstock','project_directory': 'project_AL/project_01700/project_ppMH/baseline','output_directory': 'national_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'schema_version':None
+'version_schema':'/buildstockbatch/buildstockbatch/schemas/vNone.yaml'
+
+####################
+Traceback (most recent call last):
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/buildstockbatch/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http+docker://localhost/v1.42/containers/create?name=buildstock_sampling
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/buildstockbatch/buildstockbatch/utils.py", line 98, in run_with_error_capture
+    return func(*args, **kwargs)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 383, in main
+    batch.run_batch(n_jobs=args.j, measures_only=args.measures_only, sampling_only=args.samplingonly)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 249, in run_batch
+    buildstock_csv_filename = self.sampler.run_sampling()
+  File "/buildstockbatch/buildstockbatch/sampler/base.py", line 81, in run_sampling
+    return self._run_sampling_docker()
+  File "/buildstockbatch/buildstockbatch/sampler/residential_quota.py", line 61, in _run_sampling_docker
+    container_output = docker_client.containers.run(
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/models/containers.py", line 847, in run
+    container = self.create(image=image, command=command,
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/models/containers.py", line 906, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/buildstockbatch/lib/python3.9/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http+docker://localhost/v1.42/containers/create?name=buildstock_sampling: Conflict ("Conflict. The container name "/buildstock_sampling" is already in use by container "9e689373038087edda0581fbe192db9e8d00156d56f08e3195cb4bfd650349d5". You have to remove (or rename) that container to be able to reuse that name.")
+
+In file: /buildstockbatch/buildstockbatch/utils.py, module run_with_error_capture line: 98 
+Local Variables: 'args':()
+'kwargs':{}
+'f':<_io.TextIOWrapper name='buildstockbatch_crash_details.log' mode='a' encoding='UTF-8'>
+'text':'
+####################
+'
+'func':<function main at 0x7f8603f68280>
+'output_file':'buildstockbatch_crash_details.log'
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module main line: 383 
+Local Variables: 'parser':ArgumentParser(prog='buildstock_docker', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+'group':<argparse._MutuallyExclusiveGroup object at 0x7f8603f69580>
+'args':Namespace(project_filename='_upgrades.yml', j=None, measures_only=False, postprocessonly=False, uploadonly=False, validateonly=False, samplingonly=False)
+'batch':<buildstockbatch.localdocker.LocalDockerBatch object at 0x7f8608af0280>
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module run_batch line: 249 
+Local Variables: 'self':<buildstockbatch.localdocker.LocalDockerBatch object at 0x7f8608af0280>
+'n_jobs':None
+'measures_only':False
+'sampling_only':False
+
+In file: /buildstockbatch/buildstockbatch/sampler/base.py, module run_sampling line: 81 
+Local Variables: 'self':<buildstockbatch.sampler.residential_quota.ResidentialQuotaSampler object at 0x7f8608497040>
+
+In file: /buildstockbatch/buildstockbatch/sampler/residential_quota.py, module _run_sampling_docker line: 61 
+Local Variables: 'self':<buildstockbatch.sampler.residential_quota.ResidentialQuotaSampler object at 0x7f8608497040>
+'docker_client':<docker.client.DockerClient object at 0x7f8617ab2f70>
+'tick':'1677549138.7667499'
+'extra_kws':{'user': '1000:1000'}
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/models/containers.py, module run line: 847 
+Local Variables: 'self':<docker.models.containers.ContainerCollection object at 0x7f8603b78190>
+'image':'nrel/openstudio:3.5.1'
+'command':['ruby','resources/run_sampling.rb','-p','project_AL/project_01700/project_ppMH/baseline','-n','2','-o','buildstock.csv']
+'stdout':True
+'stderr':False
+'remove':True
+'kwargs':{'volumes': {'/buildstockbatch/resstock': {'bind': '/var/simdata/openstudio','mode': 'rw'}},'name': 'buildstock_sampling','user': '1000:1000'}
+'stream':False
+'detach':False
+'platform':None
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/models/containers.py, module create line: 906 
+Local Variables: 'self':<docker.models.containers.ContainerCollection object at 0x7f8603b78190>
+'image':'nrel/openstudio:3.5.1'
+'command':['ruby','resources/run_sampling.rb','-p','project_AL/project_01700/project_ppMH/baseline','-n','2','-o','buildstock.csv']
+'kwargs':{}
+'create_kwargs':{'detach': False,'name': 'buildstock_sampling','user': '1000:1000','image': 'nrel/openstudio:3.5.1','command': ['ruby','resources/run_sampling.rb','-p','project_AL/project_01700/project_ppMH/baseline','-n','2','-o','buildstock.csv'],'host_config': {'NetworkMode': 'default', 'Binds': ['/buildstockbatch/resstock:/var/simdata/openstudio:rw']},'volumes': ['/var/simdata/openstudio']}
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/api/container.py, module create_container line: 431 
+Local Variables: 'self':<docker.api.client.APIClient object at 0x7f8603b78c70>
+'image':'nrel/openstudio:3.5.1'
+'command':['ruby','resources/run_sampling.rb','-p','project_AL/project_01700/project_ppMH/baseline','-n','2','-o','buildstock.csv']
+'hostname':None
+'user':'1000:1000'
+'detach':False
+'stdin_open':False
+'tty':False
+'ports':None
+'environment':None
+'volumes':['/var/simdata/openstudio']
+'network_disabled':False
+'name':'buildstock_sampling'
+'entrypoint':None
+'working_dir':None
+'domainname':None
+'host_config':{'NetworkMode': 'default', 'Binds': ['/buildstockbatch/resstock:/var/simdata/openstudio:rw']}
+'mac_address':None
+'labels':None
+'stop_signal':None
+'networking_config':None
+'healthcheck':None
+'stop_timeout':None
+'runtime':None
+'use_config_proxy':True
+'platform':None
+'config':{'Hostname': None, 'Domainname': None, 'ExposedPorts': None, 'User': '1000:1000', 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'AttachStdin': False, 'AttachStdout': True, 'AttachStderr': True, 'Env': None, 'Cmd': ['ruby', 'resources/run_sampling.rb', '-p', 'project_AL/project_01700/project_ppMH/baseline', '-n', '2', '-o', 'buildstock.csv'], 'Image': 'nrel/openstudio:3.5.1', 'Volumes': {'/var/simdata/openstudio': {}}, 'NetworkDisabled': False, 'Entrypoint': None, 'WorkingDir': None, 'HostConfig': {'NetworkMode': 'default', 'Binds': ['/buildstockbatch/resstock:/var/simdata/openstudio:rw']}, 'NetworkingConfig': None, 'MacAddress': None, 'Labels': None, 'StopSignal': None, 'Healthcheck': None, 'StopTimeout': None, 'Runtime': None}
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/api/container.py, module create_container_from_config line: 448 
+Local Variables: 'self':<docker.api.client.APIClient object at 0x7f8603b78c70>
+'config':{'Hostname': None, 'Domainname': None, 'ExposedPorts': None, 'User': '1000:1000', 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'AttachStdin': False, 'AttachStdout': True, 'AttachStderr': True, 'Env': None, 'Cmd': ['ruby', 'resources/run_sampling.rb', '-p', 'project_AL/project_01700/project_ppMH/baseline', '-n', '2', '-o', 'buildstock.csv'], 'Image': 'nrel/openstudio:3.5.1', 'Volumes': {'/var/simdata/openstudio': {}}, 'NetworkDisabled': False, 'Entrypoint': None, 'WorkingDir': None, 'HostConfig': {'NetworkMode': 'default', 'Binds': ['/buildstockbatch/resstock:/var/simdata/openstudio:rw']}, 'NetworkingConfig': None, 'MacAddress': None, 'Labels': None, 'StopSignal': None, 'Healthcheck': None, 'StopTimeout': None, 'Runtime': None}
+'name':'buildstock_sampling'
+'platform':None
+'u':'http+docker://localhost/v1.42/containers/create'
+'params':{'name': 'buildstock_sampling'}
+'res':<Response [409]>
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/api/client.py, module _result line: 274 
+Local Variables: 'self':<docker.api.client.APIClient object at 0x7f8603b78c70>
+'response':<Response [409]>
+'json':True
+'binary':False
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/api/client.py, module _raise_for_status line: 270 
+Local Variables: 'self':<docker.api.client.APIClient object at 0x7f8603b78c70>
+'response':<Response [409]>
+
+In file: /buildstockbatch/lib/python3.9/site-packages/docker/errors.py, module create_api_error_from_http_exception line: 39 
+Local Variables: 'e':409 Client Error: Conflict for url: http+docker://localhost/v1.42/containers/create?name=buildstock_sampling
+'response':<Response [409]>
+'explanation':'Conflict. The container name "/buildstock_sampling...227...ame) that container to be able to reuse that name.'
+'cls':<class 'docker.errors.APIError'>
+
+####################
+Traceback (most recent call last):
+  File "/buildstockbatch/buildstockbatch/utils.py", line 98, in run_with_error_capture
+    return func(*args, **kwargs)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 378, in main
+    LocalDockerBatch.validate_project(args.project_filename)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 145, in validate_project
+    super(LocalDockerBatch, LocalDockerBatch).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 58, in validate_project
+    super(DockerBatchBase, DockerBatchBase).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 260, in validate_project
+    assert BuildStockBatchBase.validate_options_lookup(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 368, in validate_options_lookup
+    param_option_dict, invalid_options_lookup_str = BuildStockBatchBase.get_param_option_dict(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 359, in get_param_option_dict
+    raise err
+  File "/buildstockbatch/buildstockbatch/base.py", line 346, in get_param_option_dict
+    with open(options_lookup_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/buildstockbatch/resources/options_lookup.tsv'
+
+In file: /buildstockbatch/buildstockbatch/utils.py, module run_with_error_capture line: 98 
+Local Variables: 'args':()
+'kwargs':{}
+'f':<_io.TextIOWrapper name='buildstockbatch_crash_details.log' mode='a' encoding='UTF-8'>
+'text':'
+####################
+'
+'func':<function main at 0x7f79f732e280>
+'output_file':'buildstockbatch_crash_details.log'
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module main line: 378 
+Local Variables: 'parser':ArgumentParser(prog='buildstock_docker', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+'group':<argparse._MutuallyExclusiveGroup object at 0x7f79f7332310>
+'args':Namespace(project_filename='_baseline.yml', j=None, measures_only=False, postprocessonly=False, uploadonly=False, validateonly=False, samplingonly=False)
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 145 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.LocalDockerBatch'>
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 58 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.DockerBatchBase'>
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project line: 260 
+Local Variables: 'project_file':'_baseline.yml'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_options_lookup line: 368 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_01700/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+
+In file: /buildstockbatch/buildstockbatch/base.py, module get_param_option_dict line: 359 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_01700/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'param_option_dict':defaultdict(<class 'set'>, {})
+'buildstock_dir':'/buildstockbatch'
+'options_lookup_path':'/buildstockbatch/resources/options_lookup.tsv'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module get_param_option_dict line: 346 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_01700/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'param_option_dict':defaultdict(<class 'set'>, {})
+'buildstock_dir':'/buildstockbatch'
+'options_lookup_path':'/buildstockbatch/resources/options_lookup.tsv'
+
+####################
+Traceback (most recent call last):
+  File "/buildstockbatch/buildstockbatch/utils.py", line 98, in run_with_error_capture
+    return func(*args, **kwargs)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 378, in main
+    LocalDockerBatch.validate_project(args.project_filename)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 145, in validate_project
+    super(LocalDockerBatch, LocalDockerBatch).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/localdocker.py", line 58, in validate_project
+    super(DockerBatchBase, DockerBatchBase).validate_project(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 260, in validate_project
+    assert BuildStockBatchBase.validate_options_lookup(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 368, in validate_options_lookup
+    param_option_dict, invalid_options_lookup_str = BuildStockBatchBase.get_param_option_dict(project_file)
+  File "/buildstockbatch/buildstockbatch/base.py", line 359, in get_param_option_dict
+    raise err
+  File "/buildstockbatch/buildstockbatch/base.py", line 346, in get_param_option_dict
+    with open(options_lookup_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/buildstockbatch/resources/options_lookup.tsv'
+
+In file: /buildstockbatch/buildstockbatch/utils.py, module run_with_error_capture line: 98 
+Local Variables: 'args':()
+'kwargs':{}
+'f':<_io.TextIOWrapper name='buildstockbatch_crash_details.log' mode='a' encoding='UTF-8'>
+'text':'
+####################
+'
+'func':<function main at 0x7f1ddad59280>
+'output_file':'buildstockbatch_crash_details.log'
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module main line: 378 
+Local Variables: 'parser':ArgumentParser(prog='buildstock_docker', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+'group':<argparse._MutuallyExclusiveGroup object at 0x7f1ddad5a400>
+'args':Namespace(project_filename='_baseline.yml', j=None, measures_only=False, postprocessonly=False, uploadonly=False, validateonly=False, samplingonly=False)
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 145 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.LocalDockerBatch'>
+
+In file: /buildstockbatch/buildstockbatch/localdocker.py, module validate_project line: 58 
+Local Variables: 'project_file':'_baseline.yml'
+'__class__':<class 'buildstockbatch.localdocker.DockerBatchBase'>
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_project line: 260 
+Local Variables: 'project_file':'_baseline.yml'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module validate_options_lookup line: 368 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+
+In file: /buildstockbatch/buildstockbatch/base.py, module get_param_option_dict line: 359 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'param_option_dict':defaultdict(<class 'set'>, {})
+'buildstock_dir':'/buildstockbatch'
+'options_lookup_path':'/buildstockbatch/resources/options_lookup.tsv'
+
+In file: /buildstockbatch/buildstockbatch/base.py, module get_param_option_dict line: 346 
+Local Variables: 'project_file':'_baseline.yml'
+'cfg':{'schema_version': '0.3','os_version': '3.5.1','os_sha': '22e1db7be5','buildstock_directory': '/buildstockbatch','project_directory': 'project_AL/project_ppMH','output_directory': '_baseline','weather_files_url': 'https://data.nrel.gov/system/files/156/BuildStock_TMY3_FIPS.zip','sampler': {'type': 'residential_quota','args': {'n_datapoints': '2'}},'workflow_generator': {'type': 'residential_hpxml','args': {'build_existing_model': {'simulation_control_timestep': '10','simulation_control_run_period_begin_month': '1','simulation_control_run_period_begin_day_of_month': '1','simulation_control_run_period_end_month': '1','simulation_control_run_period_end_day_of_month': '31','simulation_control_run_period_calendar_year': '2007'},'emissions': [{'scenario_name': 'LRMER_MidCase_15','type': 'CO2e','elec_folder': 'data/cambium/LRMER_MidCase_15'}],'utility_bills': [{'scenario_name': 'Bills'}],'simulation_output_report': {'timeseries_frequency': 'hourly','include_timeseries_total_consumptions': True,'include_timeseries_fuel_consumptions': True,'include_timeseries_end_use_consumptions': True,'include_timeseries_emissions': True,'include_timeseries_total_loads': False},'reporting_measures': [{'measure_dir_name': 'QOIReport'}],'server_directory_cleanup': {'retain_in_idf': False,'retain_schedules_csv': False}}},'baseline': {'n_buildings_represented': '136569411'},'eagle': {'n_jobs': '3','minutes_per_sim': '30','account': '<account you are authorized to use>','postprocessing': {'time': '20','n_workers': '1'},'sampling': {'time': '5'}}}
+'param_option_dict':defaultdict(<class 'set'>, {})
+'buildstock_dir':'/buildstockbatch'
+'options_lookup_path':'/buildstockbatch/resources/options_lookup.tsv'
